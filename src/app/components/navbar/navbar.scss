@@ -1,0 +1,47 @@
+.acme-navbar-text{
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 1.25em;
+}
+
+a:hover, a:focus {
+  color: greenyellow;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar li { color: #000026 } 
+
+ .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+      border-right: #000 solid;
+	  border-width: thin;
+	  > a {
+	  	color: #000026 !important;
+		font-weight: 700;
+	  }
+	  > a:hover {
+	  	color: #7d8a35 !important;
+		font-weight: 600;
+	  }
+    }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	color: #7d8a35;
+	background-color:transparent;
+}

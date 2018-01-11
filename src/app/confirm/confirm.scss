@@ -1,0 +1,43 @@
+.btn-link{
+	color:#A9A5A8;
+	font-size: 16px;
+}
+
+.btn-link:hover, .btn-link:focus{
+	color:#333333;
+}
+.container{
+	margin-top: 50px;
+}
+.formTittle{
+	margin-bottom:42px;
+	letter-spacing:.6px;
+	word-wrap:break-word;
+	text-align: left;
+	font-size: 50px;
+	color:#A9A5A8;
+	font:normal normal normal 48px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+form{
+	padding-top:98px;
+}
+.form-horizontal .form-group{
+	margin-left:5px;
+	margin-right:5px;
+}
+.form-horizontal{
+	width: 65%;
+}
+.btn-default{
+	position:relative;
+	margin-top:4px;
+	cursor: pointer;
+	width:100%;
+	min-height:54px;
+	padding:3px 6px;
+	border-radius:0px;
+	background-color:#A9A5A8;
+	margin-left: 5px;
+	color: rgba(255,255,255,1);
+	font:normal normal bold 21px/1.4em "open sans",sans-serif;
+}

@@ -1,0 +1,328 @@
+ @font-face {
+    font-family: lobster;
+    src: url("../assets/fonts/lobster/Lobster 1.4.otf");
+}
+h1{
+	font-family: lobster;
+	text-align: center;
+	font-size: 48px;
+}
+
+.parallaxBanner {
+    /* The image used */
+    background-image: url("../assets/photos/myf-42.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.dateInfo{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	text-align: center;
+	.title {
+		font-size: 45px;
+		font-family: lobster;
+	}
+	.dateLocation {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+
+.history{
+	padding-top: 80px;
+	h1{
+		color: #DD8F97;
+		margin-top: 25px;
+		font-size: 48px;
+	}
+	h3{
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-weight: bold;
+		color: #534F52;
+		font-size: 21px;
+	}
+	p{
+		color: #534F52;
+		font-size: 16px;
+		text-align: justify;
+	}
+	img{
+		margin-top: 15px;
+	}
+}
+
+.galeria{
+
+	margin-top: 60px;
+	.gal-container{
+		padding: 12px;
+	}
+	.gal-item{
+		overflow: hidden;
+		padding: 3px;
+	}
+	.gal-item .box{
+		height: 350px;
+		overflow: hidden;
+	}
+	.box img{
+		height: 100%;
+		width: 100%;
+		object-fit:cover;
+		-o-object-fit:cover;
+	}
+	.gal-item a:focus{
+		outline: none;
+	}
+	.gal-item a:after{
+		content:"\e003";
+		font-family: 'Glyphicons Halflings';
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+		position: absolute;
+		right: 3px;
+		left: 3px;
+		top: 3px;
+		bottom: 3px;
+		text-align: center;
+	    line-height: 350px;
+	    font-size: 30px;
+	    color: #fff;
+	    -webkit-transition: all 0.5s ease-in-out 0s;
+	    -moz-transition: all 0.5s ease-in-out 0s;
+	    transition: all 0.5s ease-in-out 0s;
+	}
+	.gal-item a:hover:after{
+		opacity: 1;
+	}
+	.modal-open .gal-container .modal{
+		background-color: rgba(0,0,0,0.4);
+	}
+	.modal-open .gal-item .modal-body{
+		padding: 0px;
+	}
+	.modal-open .gal-item button.close{
+	    position: absolute;
+	    width: 25px;
+	    height: 25px;
+	    background-color: #000;
+	    opacity: 1;
+	    color: #fff;
+	    z-index: 999;
+	    right: -12px;
+	    top: -12px;
+	    border-radius: 50%;
+	    font-size: 15px;
+	    border: 2px solid #fff;
+	    line-height: 25px;
+	    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+		box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	}
+	.modal-open .gal-item button.close:focus{
+		outline: none;
+	}
+	.modal-open .gal-item button.close span{
+		position: relative;
+		top: -3px;
+		font-weight: lighter;
+		text-shadow:none;
+	}
+	.gal-container .modal-dialogue{
+		width: 80%;
+	}
+	.gal-container .description{
+		position: relative;
+		height: 40px;
+		top: -40px;
+		padding: 10px 25px;
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+		text-align: left;
+	}
+	.gal-container .description h4{
+		margin:0px;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+	.gal-container .modal.fade .modal-dialog {
+	    -webkit-transform: scale(0.1);
+	    -moz-transform: scale(0.1);
+	    -ms-transform: scale(0.1);
+	    transform: scale(0.1);
+	    top: 100px;
+	    opacity: 0;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+
+	.gal-container .modal.fade.in .modal-dialog {
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transform: translate3d(0, -100px, 0);
+	    transform: translate3d(0, -100px, 0);
+	    opacity: 1;
+	}
+	@media (min-width: 768px) {
+	.gal-container .modal-dialog {
+	    width: 55%;
+	    margin: 50 auto;
+	}
+	}
+	@media (max-width: 768px) {
+	    .gal-container .modal-content{
+	        height:250px;
+	    }
+	}
+	/* Footer Style */
+	i.red{
+	    color:#BC0213;
+	}
+	.gal-container{
+	    padding-top :75px;
+	    padding-bottom:75px;
+	}
+}
+
+.boda{
+	
+	text-align: center;
+	padding: 50px;
+	margin-top: 60px;
+
+	color: #fff;
+	.info{
+		margin-top: 10px;
+		background-size: cover;
+		background-color: #DD8F97;
+		padding: 30px;
+	}
+	.bordered-col{
+		border-right: 2px solid #fff;
+	}
+	h1{
+		margin-top: 60px;
+		margin-bottom: 30px;
+		font-size: 48px;
+	}
+	.btn{
+		color: #fff;
+		margin-top: 60px;
+		border-width: 4px;
+		border-color: #fff;
+		font-size: 23px;
+	}
+	.btn:hover{
+		color: #fff;
+		background-color: #d4717b;
+	}
+}
+
+.location {
+	text-align: center;
+    /* The image used */
+    background-image: url("../assets/photos/myf-34.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 7%;
+    h1{
+		font-size: 48px;
+    }
+    h3{
+    	font-size: 21px;
+    	letter-spacing: 5px;
+		font-weight: bold;
+    }
+    p{
+    	font-size: 16px;
+    }
+}
+
+.hospedaje {
+	text-align: center;
+	padding: 50px;
+	color: #534F52;
+    h1{
+		font-size: 48px;
+		color: #DD8F97;
+    }
+    a{
+    	color: #534F52;
+    	text-decoration: underline;
+    	font-size: 18px;
+		font-weight: bold;
+    }
+    a:hover{
+    	color: #534F52;
+    }
+    a:focus{
+    	color: #534F52;
+    }
+    p{
+    	font-size: 16px;
+    }
+}
+
+.regalos{
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 5%;
+	color: #534F52;
+	background-image: url("../assets/photos/stripBackground.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    h1{
+		font-size: 48px;
+		color: #DD8F97;
+    }
+
+    p{
+    	font-weight: bold;
+    	font-size: 16px;
+    }
+}
+.message{
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 5%;
+	text-align: center;
+	height: 350px;
+	h3{
+		font-family: lobster;
+		font-size: 28px;
+		color: #DD8F97;
+    }
+}
+.footer-bottom{
+	text-align: center;
+}

@@ -223,12 +223,19 @@ h1{
 		margin-bottom: 30px;
 		font-size: 48px;
 	}
-	.btn{
-		color: #fff;
+	a{
+		color: #fff !important;
+	}
+	a:hover{
+		text-decoration:none;
+	}
+	.btn-conf{
+		color: #fff !important;
 		margin-top: 60px;
 		border-width: 4px;
 		border-color: #fff;
-		font-size: 23px;
+		background-color: #DD8F97;
+		font-style: 28px;
 	}
 	.btn:hover{
 		color: #fff;
@@ -291,8 +298,8 @@ h1{
 
 .regalos{
 	text-align: center;
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 5%;
 	color: #534F52;
 	background-image: url("../assets/photos/stripBackground.jpg");
@@ -300,7 +307,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 450px;
     h1{
 		font-size: 48px;
 		color: #DD8F97;
@@ -314,7 +321,7 @@ h1{
 .message{
 	padding-left: 30%;
 	padding-right: 30%;
-	padding-top: 5%;
+	padding-top: 10%;
 	text-align: center;
 	height: 350px;
 	h3{

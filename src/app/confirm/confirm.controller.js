@@ -6,15 +6,22 @@
     .controller('ConfirmController', ConfirmController);
 
   /** @ngInject */
-  function ConfirmController($timeout, webDevTec, toastr) {
+  function ConfirmController($timeout, guestFactory) {
+
     var vm = this;
+    vm.showSuccess = false;
+    vm.confirm = confirm;
+    vm.guests = null;
 
-    vm.classAnimation = '';
-    vm.showToastr = showToastr;
+    guestFactory.fetchGuests().success(function(response){
+        vm.guests=response;
+    });
 
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
+    function confirm(){
+      //vm.guests.push(vm.guest);
+      guestFactory.saveGuest(vm.guests).success(function(response){
+        vm.showSuccess = true;
+      });
     }
 
   }
